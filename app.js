@@ -17,7 +17,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.locals.layout = false;
-app.get('/sent', (req,res) => {
+app.get('/', (req,res) => {
 	res.render('contact');
 });
 
