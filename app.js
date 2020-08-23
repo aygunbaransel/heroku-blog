@@ -64,4 +64,4 @@ app.post('/', (req, res) => {
 }
 main().catch(console.error);
 });
-app.listen(3000, () => console.log('Server Started'));
+app.listen(80, () => console.log('Server Started'));
