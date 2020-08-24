@@ -201,7 +201,7 @@ figure, .skills > .content > .skills-level figcaption, .exp article{
 }
 .skills > .content > .skills-level > .progress-items {
 	max-width:95%;
-	width:100%;
+	width:75%;
 	height:250px;
 	display:grid;
 	grid-template-columns:1fr 1fr;
@@ -294,7 +294,6 @@ figure, .skills > .content > .skills-level figcaption, .exp article{
 }
 .skills > .content .item {
 	position:relative;
-	height:25%;
 }
 .skills .item::before {
 	content: '';
