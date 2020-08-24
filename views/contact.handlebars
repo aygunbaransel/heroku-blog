@@ -36,37 +36,37 @@ $(".spin").addClass("complete");
   <a href="../public/posts/post6.html">
   <div class="file">
   <img src="https://4vector.com/i/free-vector-text-file-icon_101919_Text_File_Icon.png" alt=""/>
-  <sub>Good Day.blog</sub>
+  <sub>Good Day</sub>
   </div>
   </a>
   <a href="../public/posts/post5.html">
   <div class="file">
   <img src="https://4vector.com/i/free-vector-text-file-icon_101919_Text_File_Icon.png" alt=""/>
-  <sub>Lorem Ipsum.blog</sub>
+  <sub>Lorem Ipsum</sub>
   </div>
   </a>
   <a href="../public/posts/post4.html">
   <div class="file">
   <img src="https://4vector.com/i/free-vector-text-file-icon_101919_Text_File_Icon.png" alt=""/>
-  <sub>Old Days.blog</sub>
+  <sub>Old Days</sub>
   </div>
   </a>
   <a href="../public/posts/post3.html">
   <div class="file">
   <img src="https://4vector.com/i/free-vector-text-file-icon_101919_Text_File_Icon.png" alt=""/>
-  <sub>Maybee.blog</sub>
+  <sub>Maybee</sub>
   </div>
   </a>
   <a href="../public/posts/post2.html">
   <div class="file">
   <img src="https://4vector.com/i/free-vector-text-file-icon_101919_Text_File_Icon.png" alt=""/>
-  <sub>Noo.blog</sub>
+  <sub>Noo</sub>
   </div>
   </a>
   <a href="../public/posts/post1.html">
   <div class="file">
   <img src="https://4vector.com/i/free-vector-text-file-icon_101919_Text_File_Icon.png" alt=""/>
-  <sub>Pardon, IT.blog</sub>
+  <sub>Pardon, IT</sub>
   </div>
   </a>
   </div>
@@ -453,6 +453,12 @@ $(".spin").addClass("complete");
   </nav>
 </footer>
 <script>
+var fileTitle = document.querySelectorAll(".blog .content sub");
+for (var i = 0; fileTitle.length > i; i++) {
+fileTitle[i].innerHTML += ".blog"; 
+}
+</script>
+<script>
 $(document).ready(function () {
 $("footer img:eq(0)").click(function () {
 $(".blog").show("medium");
@@ -774,7 +780,6 @@ blockItems[i].style.zIndex = "9";
 } 
 $(blockItems[0]).click(function() {
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
-blockItems[0].style.zIndex = "-1";
 blockElements[1].style.display = "none";
 blockElements[1].style.transform = "scale(1.0) translate(-50%, -50%)";
 blockElements[2].style.display = "none";
@@ -787,11 +792,13 @@ noClick.style.zIndex = "-5";
 for (var i = 0; blockElements.length > i; i++) {
 windowItems[i].style.zIndex = "-1";
 blockElements[i].style.cursor = "initial";
+blockItems[i].style.zIndex = "-1";
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
 }
 });
 $(blockItems[1]).click(function() {
 blockElements[1].style.transform = "scale(1.0) translate(-50%, -50%)";
-blockItems[1].style.zIndex = "-1";
 blockElements[0].style.display = "none";
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
 blockElements[2].style.display = "none";
@@ -804,11 +811,13 @@ noClick.style.zIndex = "-5";
 for (var i = 0; blockElements.length > i; i++) {
 windowItems[i].style.zIndex = "-1";
 blockElements[i].style.cursor = "initial";
+blockItems[i].style.zIndex = "-1";
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
 }
 });
 $(blockItems[2]).click(function() {
 blockElements[2].style.transform = "scale(1.0) translate(-50%, -50%)";
-blockItems[2].style.zIndex = "-1";
 blockElements[0].style.display = "none";
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
 blockElements[1].style.display = "none";
@@ -821,11 +830,13 @@ noClick.style.zIndex = "-5";
 for (var i = 0; blockElements.length > i; i++) {
 windowItems[i].style.zIndex = "-1";
 blockElements[i].style.cursor = "initial";
+blockItems[i].style.zIndex = "-1";
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
 }
 });
 $(blockItems[3]).click(function() {
 blockElements[3].style.transform = "scale(1.0) translate(-50%, -50%)";
-blockItems[3].style.zIndex = "-1";
 blockElements[0].style.display = "none";
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
 blockElements[1].style.display = "none";
@@ -838,11 +849,13 @@ noClick.style.zIndex = "-5";
 for (var i = 0; blockElements.length > i; i++) {
 windowItems[i].style.zIndex = "-1";
 blockElements[i].style.cursor = "initial";
+blockItems[i].style.zIndex = "-1";
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
 }
 });
 $(blockItems[4]).click(function() {
 blockElements[4].style.transform = "scale(1.0) translate(-50%, -50%)";
-blockItems[4].style.zIndex = "-1";
 blockElements[0].style.display = "none";
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
 blockElements[1].style.display = "none";
@@ -855,6 +868,9 @@ noClick.style.zIndex = "-5";
 for (var i = 0; blockElements.length > i; i++) {
 windowItems[i].style.zIndex = "-1";
 blockElements[i].style.cursor = "initial";
+blockItems[i].style.zIndex = "-1";
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
 }
 });
 e.style.transform = "scale(0.20) translate(0%, -250%)";
@@ -879,7 +895,6 @@ blockItems[i].style.zIndex = "9";
 } 
 $(blockItems[0]).click(function() {
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
-blockItems[0].style.zIndex = "-1";
 blockElements[1].style.display = "none";
 blockElements[1].style.transform = "scale(1.0) translate(-50%, -50%)";
 blockElements[2].style.display = "none";
@@ -890,11 +905,13 @@ noClick.style.zIndex = "-5";
 for (var i = 0; blockElements.length > i; i++) {
 windowItems[i].style.zIndex = "-1";
 blockElements[i].style.cursor = "initial";
+blockItems[i].style.zIndex = "-1";
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
 }
 });
 $(blockItems[1]).click(function() {
 blockElements[1].style.transform = "scale(1.0) translate(-50%, -50%)";
-blockItems[1].style.zIndex = "-1";
 blockElements[0].style.display = "none";
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
 blockElements[2].style.display = "none";
@@ -905,11 +922,13 @@ noClick.style.zIndex = "-5";
 for (var i = 0; blockElements.length > i; i++) {
 windowItems[i].style.zIndex = "-1";
 blockElements[i].style.cursor = "initial";
+blockItems[i].style.zIndex = "-1";
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
 }
 });
 $(blockItems[2]).click(function() {
 blockElements[2].style.transform = "scale(1.0) translate(-50%, -50%)";
-blockItems[2].style.zIndex = "-1";
 blockElements[0].style.display = "none";
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
 blockElements[1].style.display = "none";
@@ -920,11 +939,13 @@ noClick.style.zIndex = "-5";
 for (var i = 0; blockElements.length > i; i++) {
 windowItems[i].style.zIndex = "-1";
 blockElements[i].style.cursor = "initial";
+blockItems[i].style.zIndex = "-1";
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
 }
 });
 $(blockItems[3]).click(function() {
 blockElements[3].style.transform = "scale(1.0) translate(-50%, -50%)";
-blockItems[3].style.zIndex = "-1";
 blockElements[0].style.display = "none";
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
 blockElements[1].style.display = "none";
@@ -935,6 +956,9 @@ noClick.style.zIndex = "-5";
 for (var i = 0; blockElements.length > i; i++) {
 windowItems[i].style.zIndex = "-1";
 blockElements[i].style.cursor = "initial";
+blockItems[i].style.zIndex = "-1";
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
 }
 });
 
@@ -951,7 +975,6 @@ blockItems[i].style.zIndex = "9";
 } 
 $(blockItems[0]).click(function() {
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
-blockItems[0].style.zIndex = "-1";
 blockElements[1].style.display = "none";
 blockElements[1].style.transform = "scale(1.0) translate(-50%, -50%)";
 blockElements[2].style.display = "none";
@@ -960,11 +983,13 @@ noClick.style.zIndex = "-5";
 for (var i = 0; blockElements.length > i; i++) {
 blockElements[i].style.cursor = "initial";
 windowItems[i].style.zIndex = "-1";
+blockItems[i].style.zIndex = "-1";
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
 }
 });
 $(blockItems[1]).click(function() {
 blockElements[1].style.transform = "scale(1.0) translate(-50%, -50%)";
-blockItems[1].style.zIndex = "-1";
 blockElements[0].style.display = "none";
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
 blockElements[2].style.display = "none";
@@ -973,11 +998,13 @@ noClick.style.zIndex = "-5";
 for (var i = 0; blockElements.length > i; i++) {
 blockElements[i].style.cursor = "initial";
 windowItems[i].style.zIndex = "-1";
+blockItems[i].style.zIndex = "-1";
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
 }
 });
 $(blockItems[2]).click(function() {
 blockElements[2].style.transform = "scale(1.0) translate(-50%, -50%)";
-blockItems[2].style.zIndex = "-1";
 blockElements[0].style.display = "none";
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
 blockElements[1].style.display = "none";
@@ -986,6 +1013,9 @@ noClick.style.zIndex = "-5";
 for (var i = 0; blockElements.length > i; i++) {
 blockElements[i].style.cursor = "initial";
 windowItems[i].style.zIndex = "-1";
+blockItems[i].style.zIndex = "-1";
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
 }
 });
 blockElements[2].style.transform = "scale(0.33) translate(-25%, -150%)"; 
@@ -1004,24 +1034,28 @@ blockItems[i].style.zIndex = "9";
 } 
 $(blockItems[0]).click(function() {
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
-blockItems[0].style.zIndex = "-1";
 blockElements[1].style.display = "none";
 blockElements[1].style.transform = "scale(1.0) translate(-50%, -50%)";
 noClick.style.zIndex = "-5";
 for (var i = 0; blockElements.length > i; i++) {
 blockElements[i].style.cursor = "initial";
 windowItems[i].style.zIndex = "-1";
+blockItems[i].style.zIndex = "-1";
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
 }
 });
 $(blockItems[1]).click(function() {
 blockElements[1].style.transform = "scale(1.0) translate(-50%, -50%)";
-blockItems[1].style.zIndex = "-1";
 blockElements[0].style.display = "none";
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
 for (var i = 0; blockElements.length > i; i++) {
 noClick.style.zIndex = "-5";
 blockElements[i].style.cursor = "initial";
 windowItems[i].style.zIndex = "-1";
+blockItems[i].style.zIndex = "-1";
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
 }
 });
 blockElements[1].style.transform = "scale(0.40) translate(-75%, -125%)"; 
@@ -1033,13 +1067,15 @@ var windowItems = document.querySelectorAll("section[style*='display: block'] .w
 for (var i = 0; blockElements.length > i; i++) { 
 blockElements[i].style.cursor = "pointer";
 blockItems[i].style.zIndex = "9";
-}
-for (var i = 0; windowItems.length > i; i++) {
 windowItems[i].style.zIndex = "9";
-} 
+}
 blockElements[0].style.transform = "scale(0.50) translate(-100%, -100%)"; 
 $(blockItems).click(function() {
 blockElements[0].style.transform = "scale(1.0) translate(-50%, -50%)";
+for (var i = 0; blockElements.length > i; i++) {
+blockElements[i].style.top = "50%";
+blockElements[i].style.left = "50%";
+}
 blockItems[0].style.zIndex = "-1";
 windowItems[0].style.zIndex = "-1";
 noClick.style.zIndex = "-5";

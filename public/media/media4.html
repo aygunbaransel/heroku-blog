@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Test </title>
+<title>Media</title>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="../css/style.css"/>
 <script
@@ -42,7 +42,7 @@ object-fit:cover;
     <h4 style="margin-right:5px;">Media</h4>
   </header>
   <div class="content">
- <img src="https://images5.alphacoders.com/100/thumb-1920-1000923.jpg"/>
+ <img src="https://images.hdqwalls.com/wallpapers/far-cry-6-2f.jpg" alt="Far Cry 6"/>
   </div>
 </section>
 <footer>
@@ -64,6 +64,10 @@ object-fit:cover;
   </a>
   </nav>
 </footer>
+<script>
+var iframeTitle = document.querySelector(".content img").getAttribute("alt");
+document.title = "Media - " + iframeTitle;
+</script>
 <script>
 $(document).ready(function () {
 $("footer img:eq(1)").click(function () {

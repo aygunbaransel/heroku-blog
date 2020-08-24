@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Test </title>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="../css/style.css"/>
 <script
@@ -69,6 +68,10 @@ and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced i
   </a>
   </nav>
 </footer>
+<script>
+var title = document.querySelector("article h3");
+document.title ="Blog -" + " " + title.innerHTML;
+</script>
 <script>
 $(document).ready(function () {
 $("footer img:eq(1)").click(function () {

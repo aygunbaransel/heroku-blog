@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Test </title>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="../css/style.css"/>
 <script
@@ -31,8 +30,8 @@ $(".spin").addClass("complete");
   </header>
   <div class="content" style="display:block;">
 <article style="font-family: 'Poppins', sans-serif; display:flex; text-align:center; width:100%; flex-direction:column;">
-<img src="https://images5.alphacoders.com/100/thumb-1920-1000923.jpg" style="width:100%;"/>
-<h3>Good Day</h3> 
+<img src="https://images.hdqwalls.com/wallpapers/far-cry-6-2f.jpg" style="width:100%;"/>
+<h3>New Days</h3> 
 <p style="font-size:1.1em;">
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
 of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was 
@@ -69,6 +68,10 @@ and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced i
   </a>
   </nav>
 </footer>
+<script>
+var title = document.querySelector("article h3");
+document.title ="Blog -" + " " + title.innerHTML;
+</script>
 <script>
 $(document).ready(function () {
 $("footer img:eq(1)").click(function () {

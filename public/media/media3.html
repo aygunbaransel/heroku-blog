@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Test </title>
+<title>Media</title>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="../css/style.css"/>
 <script
@@ -42,7 +42,7 @@ object-fit:cover;
     <h4 style="margin-right:5px;">Media</h4>
   </header>
   <div class="content">
-<iframe src="https://player.vimeo.com/video/202952558" width="100%" height="99%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/151292804" width="100%" height="99%" frameborder="0" allow="autoplay; fullscreen" alt="4K Videos" allowfullscreen></iframe>
   </div>
 </section>
 <footer>
@@ -64,6 +64,10 @@ object-fit:cover;
   </a>
   </nav>
 </footer>
+<script>
+var iframeTitle = document.querySelector("iframe").getAttribute("alt");
+document.title = "Media - " + iframeTitle;
+</script>
 <script>
 $(document).ready(function () {
 $("footer img:eq(1)").click(function () {
