@@ -396,6 +396,7 @@ figure, .skills > .content > .skills-level figcaption, .exp article{
 	margin-bottom:15px;
 }
 .about article p {
+	font-size:1em;
 	width:80%;
 }
 .about a {
@@ -563,6 +564,7 @@ svg {
 	}
 	.about article p {
 		width:100%;
+		font-size:.8em;
 	}
 	.content::-webkit-scrollbar-thumb {
 border-radius:90px;  
