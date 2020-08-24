@@ -409,10 +409,10 @@ $(".spin").addClass("complete");
 {{msg}}
 </br>
 <form method="POST" action="" style="margin-top:5px;">
-<input type="text" name="name" placeholder="Full Name"/>
-<input type="text" name="email" placeholder="Email Address"/>
-<input type="text" name="subject" placeholder="Subject"/>
-<textarea name="message" placeholder="Message" ></textarea>
+<input type="text" name="name" placeholder="Full Name" required/>
+<input type="email" name="email" placeholder="Email Address" required/>
+<input type="text" name="subject" placeholder="Subject" required/>
+<textarea name="message" placeholder="Message" required></textarea>
 <button type="submit">Send Message</button>
 </form>
 <div class="info">
